@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caprasimo&family=Corben:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Rochester&display=swap');
+
+@font-face {
+    font-family: "Abril Fatface", serif;;
+    src: url(fontes/Abril_Fatface/) format('opentype');
+    src: url(fontes/Caprasimo/Caprasimo-Regular.ttf) format('opentype');
+    src: url(fontes/Bebas_Neue/BebasNeue-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+:root {
+    --cor0: #ffd966;
+    --cor1: #88b04b;
+    --cor2: #5b2c6f;
+    --cor3: #f7df91;
+    --cor4: #d8ae31;
+
+    --fonte-padrao: 'Bebas Neue';
+    --fonte-destaque: 'Caprasimo';
+    --fonte-android: 'Sans-serif';
+}
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{
+    background-image: url('imagens/textura.jpg');
+    background-blend-mode: multiply; 
+    background-size: cover;
+  
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding: 2px;
+}
+
+header > h1{
+    color: black;
+    font-family: var(--fonte-destaque);
+    font-size: 7em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.350);
+}
+
+nav{
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.350);
+}
+
+nav > a{
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5 ;
+}
+
+nav >a:hover {
+    background-color: var(--cor4);
+}
+
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color:#f7df91 ;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.350);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1{
+text-align: center;
+font-family: var(--fonte-padrao);
+font-size: 6em;
+
+}
+
+p{
+    font-size: 1.3em;
+    font-family: var(--fonte-android);
+    text-align: center;
+}
+
+picture >img{
+    justify-content: center;
+    margin: 20px;
+    padding: 70px;
+}
+
+.abas{
+    list-style-type: none;
+    columns: 2;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f1d474;
+}
+
+ul > a:hover {
+    font-size: 1.3em;
+    font-family: var(--fonte-destaque);
+}
+
